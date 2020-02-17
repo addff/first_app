@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(home: Scaffold(
       appBar: AppBar(title: Text('Bismillah!'),),
-      body: Text('Dengan Nama Allah Yang Maha Pemurah Lagi Maha Mengasihani')
+      body: Text('Dengan Nama Allah Yang Maha Pemurah Lagi Maha Mengasihani'),
     ));
   }
 }
