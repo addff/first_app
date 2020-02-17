@@ -9,6 +9,9 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Text('Bismillah!'));
+    return MaterialApp(home: Scaffold(
+      appBar: AppBar(title: Text('Bismillah!'),),
+      body: Text('Dengan Nama Allah Yang Maha Pemurah Lagi Maha Mengasihani')
+    ));
   }
 }
