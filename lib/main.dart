@@ -30,33 +30,67 @@ class MyStatelessWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Expanded Column Sample with Exercise 1'),
+        title: Text('Expanded Column Sample with Exercise 2'),
       ),
       body: Center(
-        child: Text(
-          "Bismillah",
-          textDirection: TextDirection.ltr,
-        )
-//        child: Column(
-//          children: <Widget>[
-//            Container(
+//        child: Text(
+//          "Bismillah",
+//          textDirection: TextDirection.ltr,
+//        )
+        child: Column(
+          children: <Widget>[
+            Container(
+              child:Row(
+                children: <Widget>[
+                  Column(
+                    children: <Widget>[
+                      Icon(Icons.phone),
+                      Container(
+                        child:Text(
+                          "CALL"
+                        )
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      Icon(Icons.navigation),
+                      Container(
+                          child:Text(
+                              "ROUTE"
+                          )
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      Icon(Icons.share),
+                      Container(
+                          child:Text(
+                              "SHARE"
+                          )
+                      )
+                    ],
+                  ),
+                ],
+              )
 //              color: Colors.blue,
 //              height: 100,
 //              width: 100,
-//            ),
-//            Expanded(
-//              child: Container(
-//                color: Colors.amber,
-//                width: 100,
-//              ),
-//            ),
-//            Container(
-//              color: Colors.blue,
-//              height: 100,
-//              width: 100,
-//            ),
-//          ],
-//        ),
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.amber,
+                width: 100,
+              ),
+            ),
+            Container(
+              color: Colors.blue,
+              height: 100,
+              width: 100,
+            ),
+          ],
+        ),
       ),
     );
   }
