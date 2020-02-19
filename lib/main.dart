@@ -1,9 +1,9 @@
 // Flutter code sample for Expanded
 
-// This example shows how to use an [Expanded] widget in a [Column] so that
-// it's middle child, a [Container] here, expands to fill the space.
+// This example shows how to use an [Expanded] widget in a [Row] with multiple
+// children expanded, utilizing the [flex] factor to prioritize available space.
 //
-// ![This results in two thin blue boxes with a larger amber box in between.](https://flutter.github.io/assets-for-api-docs/assets/widgets/expanded_column.png)
+// ![This results in a wide amber box, followed by a thin blue box, with a medium width amber box at the end.](https://flutter.github.io/assets-for-api-docs/assets/widgets/expanded_row.png)
 
 import 'package:flutter/material.dart';
 
@@ -30,26 +30,29 @@ class MyStatelessWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Expanded Column Sample'),
+        title: Text('Expanded Row Sample'),
       ),
       body: Center(
-        child: Column(
+        child: Row(
           children: <Widget>[
-            Container(
-              color: Colors.blue,
-              height: 100,
-              width: 100,
-            ),
             Expanded(
+              flex: 2,
               child: Container(
                 color: Colors.amber,
-                width: 100,
+                height: 100,
               ),
             ),
             Container(
               color: Colors.blue,
               height: 100,
-              width: 100,
+              width: 50,
+            ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                color: Colors.amber,
+                height: 100,
+              ),
             ),
           ],
         ),
