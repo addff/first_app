@@ -33,10 +33,8 @@ class MyStatelessWidget extends StatelessWidget {
         title: Text('Expanded Column Sample with Exercise 2'),
       ),
       body: Center(
-          child:Row(
+        child:Column(
             children: <Widget>[
-              Column(
-                children: <Widget>[
                   Icon(Icons.phone),
                   Container(
                       child:Text(
@@ -44,29 +42,41 @@ class MyStatelessWidget extends StatelessWidget {
                       )
                   )
                 ],
-              ),
-              Column(
-                children: <Widget>[
-                  Icon(Icons.navigation),
-                  Container(
-                      child:Text(
-                          "ROUTE"
-                      )
-                  )
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Icon(Icons.share),
-                  Container(
-                      child:Text(
-                          "SHARE"
-                      )
-                  )
-                ],
-              ),
-            ],
-          )
+        )
+//          child:Row(
+//            children: <Widget>[
+//              Column(
+//                children: <Widget>[
+//                  Icon(Icons.phone),
+//                  Container(
+//                      child:Text(
+//                          "CALL"
+//                      )
+//                  )
+//                ],
+//              ),
+//              Column(
+//                children: <Widget>[
+//                  Icon(Icons.navigation),
+//                  Container(
+//                      child:Text(
+//                          "ROUTE"
+//                      )
+//                  )
+//                ],
+//              ),
+//              Column(
+//                children: <Widget>[
+//                  Icon(Icons.share),
+//                  Container(
+//                      child:Text(
+//                          "SHARE"
+//                      )
+//                  )
+//                ],
+//              ),
+//            ],
+//          )
 //        child: Text(
 //          "Bismillah",
 //          textDirection: TextDirection.ltr,
