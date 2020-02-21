@@ -9,8 +9,9 @@ class SecondRoute extends StatelessWidget {
       ),
       body: Center(
         child: RaisedButton(
+          // Within the SecondRoute widget
           onPressed: () {
-            // Navigate back to first route when tapped.
+            Navigator.pop(context);
           },
           child: Text('Go back!'),
         ),
