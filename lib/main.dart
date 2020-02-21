@@ -10,11 +10,7 @@ void main() {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => SecondRoute(
-                onPressed: () {
-                  Navigator.pop(context);
-                }
-            )),
+            MaterialPageRoute(builder: (context) => SecondRoute()),
           );
         }
     ),
